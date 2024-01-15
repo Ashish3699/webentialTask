@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+
+<body>
+    <!-- Header (Navbar with submenu, Side menu) -->
+    <!-- For Devices with width more than 1250px-->
+    <header class="navHeader laptop">
+        <!-- RV Central Logo -->
+        <div class="brandLogo">
+            <img src="Assets/Home/Group 894.svg" alt="brand" class="brandImage">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navBar">
+            <!-- Social Section -->
+            <div class="socialSection">
+                <div class="socialMain">
+                    <img src="Assets/Home/Path 11.svg" class="socialfacebook">
+                    <img src="Assets/Home/Group 3.svg" class="socialInsta">
+                    <button class="socialCall">
+                        <img src="Assets/Home/Group 63.svg" alt="Phone" class="phoneImage"> Call us now
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Navigation section -->
+            <ul class="navUl">
+                <li>Home</li>
+                <li class="stockElement">
+                    <div class="dropbtn">Our Stock
+                        <img src="Assets/Home/Path 16.svg" alt="Dropdown" class="dropImage">
+                    </div>
+
+                    <!-- Submenu -->
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <div class="moreDropdown">
+                            <div class="dropbtn">More
+
+                                <img src="Assets/Home/Path 16.svg" alt="Dropdown" class="dropImage">
+                            </div>
+                            <div class="dropdown-content-more">
+                                <a href="#">option 1</a>
+                                <a href="#">option 2</a>
+                                <a href="#">option 3</a>
+                            </div>
+                        </div>
+                </li>
+                <li>Our Range</li>
+                <li>About Us</li>
+                <li class="contactUsElement">
+                    <div class="dropbtn">Contact Us
+
+                        <img src="Assets/Home/Path 16.svg" alt="Dropdown" class="dropImage">
+                    </div>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <div class="moreDropdown">
+                            <div class="dropbtn">More
+
+                                <img src="Assets/Home/Path 16.svg" alt="Dropdown" class="dropImage">
+                            </div>
+                            <div class="dropdown-content-more">
+                                <a href="#">option 1</a>
+                                <a href="#">option 2</a>
+                                <a href="#">option 3</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <!-- Side Menu -->
+                <li class="hamburger">
+                    <input type="checkbox" class="hamburgerLogicButton">
+
+                    <img src="Assets/Home/Group 142.svg" alt="menu" class="hamburgerMenu">
+                    <div class="sideBar">
+                        <div class="sideBarContent">
+                            <h1>Ashish Patel (Developer)</h1>
+                            <ul class="sideBarList">
+                                <li>Dashboard</li>
+                                <li>About</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- For Devices with width less than 1250px-->
+    <header class="navHeader mobile">
+        <nav class="navBar">
+            <div class="socialSection">
+                <div class="socialMain">
+                    <img src="Assets/Home/Path 11.svg" class="socialfacebook">
+                    <img src="Assets/Home/Group 3.svg" class="socialInsta">
+                    <button class="socialCall">
+                        <img src="Assets/Home/Group 63.svg" alt="Phone" class="phoneImage"> Call us now
+                    </button>
+                </div>
+            </div>
+            <div class="brandLogo">
+                <img src="Assets/Home/Group 894.svg" alt="brand" class="brandImage">
+                <div class="hamburger">
+                    <input type="checkbox" class="hamburgerLogicButton">
+                    <img src="Assets/Home/Group 142.svg" alt="menu" class="hamburgerMenu">
+                    <div class="sideBar">
+                        <div class="sideBarContent">
+                            <h1>Ashish Patel (Developer)</h1>
+                            <ul class="sideBarList">
+                                <li>Dashboard</li>
+                                <li>About</li>
+                                <li>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Hero Page -->
+    <main>
+        <div class="heroContent">
+            <div class="mainContent">
+                <div class="adventureTitle">
+                    Your Next Adventure With <span class="adventureStyleText">
+                        Style
+                    </span>
+                </div>
+                <div class="adventureContent">
+                    <p class="adventureContentMain">
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </div>
+
+                <!-- Form with banner -->
+                <form action="#">
+                    <div class="formBanner">
+                        <ul class="formBannerList">
+                            <li class="locationDropdown">
+                                <select class="formBtn" name="locationData" id="locationData">
+                                    <option value="none" selected disabled hidden>Location</option>
+                                    <option value="delhi">Delhi</option>
+                                    <option value="pune">Pune</option>
+                                    <option value="mumbai">Mumbai</option>
+                                </select>
+                            </li>
+                            <li class="newUsedDropdown">
+                                <select class="formBtn" name="newOrUsedData" id="newOrUsedData">
+                                    <option value="none" selected disabled hidden>New or Used</option>
+                                    <option value="new">New</option>
+                                    <option value="used">Used</option>
+                                </select>
+                            </li>
+                            <li class="makeDropdown">
+                                <select class="formBtn" name="makeData" id="makeData">
+                                    <option value="none" selected disabled hidden>Make</option>
+                                    <option value="2002">2002</option>
+                                    <option value="2001">2001</option>
+                                    <option value="2000">2000</option>
+                                </select>
+                            </li>
+                            <li class="modelDropdown">
+                                <select class="formBtn" name="modelData" id="modelData">
+                                    <option value="none" selected disabled hidden>Model</option>
+                                    <option value="uv-1">uv-1</option>
+                                    <option value="uv-2">uv-2</option>
+                                    <option value="uv-3">uv-3</option>
+                                </select>
+                            </li>
+                            <li class="typeDropdown">
+                                <select class="formBtn" name="typeData" id="typeData">
+                                    <option value="none" selected disabled hidden>Type</option>
+                                    <option value="Standard">Standard</option>
+                                    <option value="Premium">Premium</option>
+                                    <option value="Supreme">Supreme</option>
+                                </select>
+                            </li>
+                            <li class="searchElement">
+                                <button type="submit" class="searchButton">
+                                    <img src="Assets/Home/Group 144.svg" alt="search" class="searchIcon">
+                                    Search
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+            </div>
+            <div class="heroImage">
+                <img src="Assets/Home/Mask Group 17.png" alt="hero" class="heroImageElement">
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

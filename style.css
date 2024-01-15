@@ -1,0 +1,610 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+
+}
+
+.mobile {
+    display: none !important;
+}
+
+.adventureStyleText {
+    font-style: italic;
+    font-weight: bolder
+}
+
+.navHeader {
+    display: flex;
+    width: 100%;
+}
+
+.navUl>li {
+    margin-left: 3rem;
+}
+
+.navUl {
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    margin-right: 15rem;
+    width: 80%;
+    color: #212121;
+}
+
+.brandLogo {
+    display: flex;
+    width: 30%;
+}
+
+.brandImage {
+    width: 200px;
+    margin-left: 15rem;
+}
+
+.navBar {
+    flex-direction: column;
+    display: flex;
+    width: 100%;
+}
+
+.socialSection {
+    margin-right: 15rem;
+    display: flex;
+    background-color: #fff3f3;
+    width: 80%;
+    padding: 0;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.socialMain {
+    display: flex;
+    align-items: center;
+}
+
+.socialMain>div {
+    padding: 2px;
+}
+
+.socialCall {
+    background-color: #F91313;
+    outline: none;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.socialfacebook {
+
+    margin-right: 15px;
+}
+
+.socialInsta {
+    width: 13px;
+    margin-right: 15px;
+
+}
+
+.phoneImage {
+    margin-right: 15px;
+}
+
+.socialInsta {
+    width: 13px;
+    margin-right: 15px;
+}
+
+.dropbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.stockElement {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    background-color: #f9f9f9;
+}
+
+.dropdown-content-more {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    background-color: #f9f9f9;
+    top: 35px;
+    left: 20px;
+}
+
+.dropdown-content-more>a {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    padding-left: 10px;
+    padding-right: 70px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-content-more>a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content>a,
+.dropdown-content>div {
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    color: black;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.dropdown-content>a:hover {
+    background-color: #ddd;
+}
+
+.dropdown-content>a:hover,
+.dropdown-content>div:hover {
+    background-color: #ddd;
+}
+
+.dropImage {
+    height: 6px;
+    width: 11px;
+    margin-left: 6px;
+}
+
+.stockElement:hover .dropdown-content {
+    display: block;
+}
+
+.contactUsElement:hover .dropdown-content {
+    display: block;
+}
+
+.hamburgerMenu {
+    width: 27px;
+    height: 27px;
+}
+
+.sideBar {
+    top: 0px;
+    left: 0px;
+    transform: translateX(-100%);
+
+    position: fixed;
+    z-index: 20;
+    width: 30%;
+    height: 100%;
+    transition: transform 0.3s;
+    background-color: #fff3f3;
+}
+
+.hamburgerLogicButton:checked~.sideBar {
+
+    transform: translateX(0);
+
+
+}
+
+.hamburgerLogicButton:checked~.hamburgerClose {
+
+    transform: translateY(0);
+    top: 15px;
+
+
+}
+
+.hamburgerLogicButton {
+    width: 27px;
+    height: 27px;
+    position: absolute;
+    opacity: 0;
+    top: 0px;
+    margin: 0;
+    cursor: pointer;
+    z-index: 30;
+    transition: transform 0.3s ease-in;
+
+}
+
+.hamburgerLogicButton:checked~.hamburgerCloseButton {
+
+    transform: translateY(0);
+    top: 15px;
+
+
+}
+
+.hamburger {
+    overflow: hidden;
+    position: relative;
+
+}
+
+.sideBarContent {
+    padding: 3rem;
+}
+
+.sideBarList>li {
+    padding: 1rem;
+    box-shadow: 0.5px 0.5px 0.5px 1px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.sideBarList li:hover {
+    background-color: #F91313;
+    cursor: pointer;
+    color: white;
+}
+
+.sideBarList {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+
+.heroContent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.heroImageElement {
+
+    height: 100%;
+    width: 610px;
+
+}
+
+.heroImage {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContent {
+    width: 60%;
+    margin-left: 14rem;
+}
+
+.adventureTitle {
+    width: 80%;
+    font-size: 50px;
+    font-weight: bold;
+  
+}
+
+.adventureStyleText {
+    color: #F91313;
+}
+
+.adventureTitle::before {
+    content: '';
+    border-bottom: solid red 5px;
+    border-radius: 40px;
+ 
+    height: 0.5px;
+    width: 60px;
+    position: absolute;
+    margin-top: -2rem;
+}
+
+.adventureContent {
+    width: 70%;
+    font-size: 15px;
+    color: #757575;
+    font-weight: lighter;
+}
+
+.formBannerList {
+    display: flex;
+    list-style: none;
+    position: absolute;
+
+}
+
+.formBannerList>li {
+
+    box-shadow: 0.1px 0.1px 6px 0.1px rgb(199, 193, 193);
+    background-color: white;
+    outline: none;
+    border: 0;
+    top: 0;
+}
+
+
+.locationDropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.locationDropdown {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.newUsedDropdown {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.newUsedDropdown:hover .dropdown-content {
+    display: block;
+}
+
+.makeDropdown {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.makeDropdown:hover .dropdown-content {
+    display: block;
+}
+
+.modelDropdown {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.modelDropdown:hover .dropdown-content {
+    display: block;
+}
+
+.typeDropdown {
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.typeDropdown:hover .dropdown-content {
+    display: block;
+}
+
+.moreDropdown {
+    /* overflow: hidden; */
+    cursor: pointer;
+    position: relative;
+}
+
+.moreDropdown:hover .dropdown-content-more {
+    display: block;
+}
+
+.formBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    background-color: white;
+    padding-right: 2rem;
+    padding-left: 2rem;
+}
+
+.locationDropdown,
+.newUsedDropdown,
+.makeDropdown,
+.modelDropdown,
+.typeDropdown {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.searchButton {
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 5px;
+    background-color: #F91313 !important;
+    border: 0;
+    display: flex;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+}
+
+.searchIcon {
+    width: 15px;
+    margin-right: 5px;
+}
+
+
+
+
+@media only screen and (max-width: 1250px) {
+
+    .mobile {
+        display: initial !important;
+    }
+
+
+    .laptop {
+        display: none;
+    }
+
+    .socialSection {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    .socialMain {
+        display: flex;
+    }
+
+    .socialMain>div {
+        padding: 2px;
+    }
+
+    .navBar,
+    .navHeader {
+        width: 100%;
+    }
+
+    .brandLogo {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem;
+        box-sizing: border-box;
+    }
+
+    .brandImage {
+        width: 170px;
+        margin: 0;
+    }
+
+    .heroContent {
+        flex-direction: column;
+    }
+
+    .adventureTitle {
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .mainContent {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        box-sizing: border-box;
+    }
+
+    .adventureContent {
+        width: 100%;
+        font-size: 16px;
+    }
+
+
+
+    .formBannerList {
+        position: initial;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin: 0;
+        width: 100%;
+        padding: 0;
+        box-sizing: border-box;
+        justify-content: space-between;
+    }
+
+    .formBannerList>li {
+        /* padding-right: 3.5rem;
+        padding-left: 3.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem; */
+        box-shadow: none;
+    }
+
+    .formBtn {
+        background-color: white;
+        outline: none;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+
+    }
+
+    .locationDropdown {
+        width: 100%;
+        border: 1px solid black !important;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+
+    .newUsedDropdown {
+        width: 38%;
+        border: 1px solid black !important;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+
+    }
+
+    .makeDropdown {
+        width: 38%;
+        border: 1px solid black !important;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+
+    .modelDropdown {
+        width: 38%;
+        border: 1px solid black !important;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+
+    .typeDropdown {
+        width: 38%;
+        border: 1px solid black !important;
+        border-radius: 10px;
+        margin-bottom: 0.5rem;
+    }
+
+    .searchElement {
+        width: 100%;
+    }
+
+    .searchButton {
+        width: 100%;
+    }
+
+    .heroImage {
+        width: 100%;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .heroImageElement {
+        height: 358px;
+        width: 400px;
+    }
+
+    .sideBar {
+        width: 70%;
+    }
+
+    .sideBarContent {
+        padding-left: 1rem;
+    }
+
+}
